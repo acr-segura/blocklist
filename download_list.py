@@ -3,12 +3,12 @@ import re
 import os
 
 DOWNLOADS_DIR = './downloads/'
-FILES_DIR = './files/'
+FILES_DIR = './chunks/'
 CONFIG_FILE = 'lists.conf'
 CONF_PREFIX = 'BL-'
-MAX_LINES = 130000
-CATEGORY = 200
-REPO = 'https://'
+MAX_LINES = 120000
+CATEGORY = 500
+REPO = 'https://github.com/acr-segura/blocklist/chunks/'
 
 def download_file(url, filename):
   """
@@ -59,7 +59,8 @@ def main():
   remove_files(FILES_DIR)
   print("Downloading files...")
   category = CATEGORY
-  with open (CONFIG_FILE, 'w') as config: 
+  with open (CONFIG_FILE, 'w') as config:
+    config.write('config system external-resource\n') 
     for index, line in enumerate(sources):      
         filename = line.split(',')[0]
         type = line.split(',')[1]
@@ -70,12 +71,13 @@ def main():
             config.write('edit "{}{}_{}"\n'.format(CONF_PREFIX,c,filename))
             config.write('  set type {}\n'.format(type))
             config.write('  set category {}\n'.format(category))
-            config.write('  set resource "{}/{}_{}"\n'.format(REPO,c,filename))
+            config.write('  set resource "{}{}_{}?raw=true"\n'.format(REPO,c,filename))
             config.write('  set refresh-rate {}\n'.format(refresh))
             config.write('next\n')
             category += 1
+    config.write('end\n')
+    config.close()
   file_sources.close()
-  config.close()
 
 if __name__ == '__main__':
     main()
