@@ -1,0 +1,15 @@
+oisd,domain,60,https://dbl.oisd.nl/
+oisdip,address,60,https://hosts.oisd.nl/
+ads-nl,domain,1440,https://github.com/blocklistproject/Lists/blob/master/alt-version/ads-nl.txt?raw=true
+abuse-nl,domain,1440,https://github.com/blocklistproject/Lists/blob/master/alt-version/ads-nl.txt?raw=true
+crypto-nl,domain,1440,https://github.com/blocklistproject/Lists/blob/master/alt-version/ads-nl.txt?raw=true
+drugs-nl,domain,1440,https://github.com/blocklistproject/Lists/blob/master/alt-version/ads-nl.txt?raw=true
+fraud-nl,domain,1440,https://github.com/blocklistproject/Lists/blob/master/alt-version/ads-nl.txt?raw=true
+gambling-nl,domain,1440,https://github.com/blocklistproject/Lists/blob/master/alt-version/ads-nl.txt?raw=true
+malware,domain,1440,https://github.com/blocklistproject/Lists/blob/master/alt-version/ads-nl.txt?raw=true
+piracy,domain,1440,https://github.com/blocklistproject/Lists/blob/master/alt-version/ads-nl.txt?raw=true
+porn,domain,1440,https://github.com/blocklistproject/Lists/blob/master/alt-version/ads-nl.txt?raw=true
+ramsonware,domain,1440,https://github.com/blocklistproject/Lists/blob/master/alt-version/ads-nl.txt?raw=true
+redirect,domain,1440,https://github.com/blocklistproject/Lists/blob/master/alt-version/ads-nl.txt?raw=true
+scam,domain,1440,https://github.com/blocklistproject/Lists/blob/master/alt-version/ads-nl.txt?raw=true
+tacking,domain,1440,https://github.com/blocklistproject/Lists/blob/master/alt-version/ads-nl.txt?raw=true
